@@ -1,5 +1,6 @@
 FROM node:4-alpine
-RUN git clone https://github.com/ariveamar/logreaper.git
+RUN pwd
+RUN ls
 WORKDIR logreaper
 RUN npm install
 RUN npm run dev-server
